@@ -6,10 +6,37 @@
   <title>fixed_layout2</title>
   <link rel="stylesheet" href="../@common/reset.css">
   <style>
-    
+    html,body{width: 100%;margin:0;padding:0}
+    #wrap{width:600px;;margin:0 auto;padding:10px;border:1px solid #bfbfbf;background-color:#f7f7f7;}
+    #header{margin:10px auto;padding:15px;border:2px solid #bfbfbf;background-color: #e5e5e5;}
+    #container{overflow:hidden;padding:15px;border:2px solid #bfbfbf;background-color: #e5e5e5;}
+    #content{float:left;margin:10px 0;padding:10px 0;height:200px;width:380px;border:1px solid #bdbdbd;background-color: #f7f7f7;text-align:center;}
+    .aside{float:right;margin:10px 0;padding:10px 0;width:180px;border:1px solid #bdbdbd;background-color: #f7f7f7;text-align:center;}
+    #footer{margin:10px 0;padding:10px;border:2px solid #bfbfbf;background-color: #e5e5e5;}
+    p{font-weight:bold;}
   </style>
 </head>
 <body>
-  
+  <div id="wrap"><p>#wrap</p>
+    <!-- //#wrap -->
+    <header id="header" class="grey"><p>#header</p></header>
+    <!-- //#header -->
+    <div id="container" class="grey">
+      <p>#container</p>
+      <div class="aside white">
+        <p>.aside</p>
+      </div>
+      <!-- //#snb -->
+      <div id="content" class="white">
+        <p>#content</p>
+      </div>
+      <!-- //#content -->
+    </div>
+    <!-- //#container -->
+    <footer id="footer" class="grey">
+      <p>#footer</p>
+    </footer>
+    <!-- //#footer -->
+  </div>
 </body>
 </html>

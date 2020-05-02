@@ -6,10 +6,46 @@
   <title>fixed_layout3</title>
   <link rel="stylesheet" href="../@common/reset.css">
   <style>
-    
+    body{width:100%;margin:0;padding:0;}
+    #wrap{width:600px;margin:0 auto;padding:10px;border:1px solid #bfbfbf;background-color:#f7f7f7;}
+    #header{margin:10px 0;padding:15px;border: 2px solid #bfbfbf;background-color: #e5e5e5;}
+    #container{padding:10px;border: 2px solid #bfbfbf;background-color: #e5e5e5;}
+    #container::after{display: block;clear: both;content: '';}
+    .snb{float: left;width:180px;margin:10px 5px 0 0;padding: 10px 0;border:1px solid #bfbfbf;background-color:#fff;text-align: center;}
+    #content{float: left;width:200px;height:200px;margin:10px auto;padding:10px 0;border:1px solid #bfbfbf;background-color:#fff;text-align:center}
+    .aside{float: right;width:180px;margin-top:10px;padding:10px 0;border:1px solid #bfbfbf;background-color:#fff;text-align:center}
+    #footer{margin:10px 0;padding:10px;border:2px solid #bfbfbf;background-color: #e5e5e5;}
+    p{font-weight:bold;}
   </style>
 </head>
 <body>
-  
+  <div id="wrap">
+    <p>#wrap</p>
+    <div id="header">
+      <p>#header</p>
+    </div>
+    <!-- //#header -->
+    <div id="container">
+      <p>#container</p>
+      <div class="snb">
+        <p>.snb</p>
+      </div>
+      <!-- //.snb -->
+      <div id="content">
+        <p>#content</p>
+      </div>
+      <!-- //#content -->
+      <div class="aside">
+        <p>.aside</p>
+      </div>
+      <!-- //.aside -->
+    </div>
+    <!-- //#container -->
+    <div id="footer">
+      <p>#footer</p>
+    </div>
+    <!-- #footer -->
+  </div>
+  <!-- //#wrap -->
 </body>
 </html>
