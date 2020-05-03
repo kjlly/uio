@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex layout1</title>
+    <style>
+        html,body{width:100%;margin:0;padding:0}
+        #wrap{width:auto;margin:0 auto;padding:10px;border:1px solid #bfbfbf;background-color:#f7f7f7}
+        #header{margin:10px auto;padding:15px;border:2px solid #bfbfbf;background-color:#e5e5e5}
+        #container{width:auto;padding:15px;border:2px solid #bfbfbf;background-color:#e5e5e5}
+        .inn{display: flex;flex-direction: row;}
+        #content{flex:1;margin:10px 0;padding:10px 0;height:200px;width:auto;border:1px solid #bdbdbd;background-color:#f7f7f7;text-align:center}
+        .snb{margin:10px 0;padding:10px 0;width:180px;border:1px solid #bdbdbd;background-color:#f7f7f7;text-align:center}
+        #footer{margin:10px 0;padding:10px;border:2px solid #bfbfbf;background-color:#e5e5e5}
+        p{margin: 0; font-weight:bold}
+        @media screen and (max-width:320px){
+            body{background:pink}
+        }
+        @media screen and (min-width:1024px){
+            body{background:yellow}
+        }
+    </style>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+        <p>#wrap</p>
+        <!-- header -->
+        <header id="header">
+            <p>#header</p>
+        </header>
+        <!-- //header -->
+        <!-- container -->
+        <div id="container">
+            <p>#container</p>
+            <!-- inn -->
+            <div class="inn">
+                <!-- snb -->
+                <div class="snb">
+                    <p>.snb</p>
+                  </div>
+                <!-- //snb -->
+                <!-- content -->
+                <div id="content">
+                  <p>#content</p>
+                </div>
+                <!-- //content -->
+            </div>
+            <!-- //inn -->
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+        <footer id="footer">
+            <p>#footer</p>
+        </footer>
+        <!-- //footer -->
+      </div>
+      <!-- //wrap -->
+</body>
+</html>
