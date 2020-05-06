@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex layout3</title>
+    <link rel="stylesheet" href="../@common/reset.css">
+    <style>
+      #wrap {
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid #bfbfbf;
+        background-color: #f7f7f7;
+      }
+      #header {
+        margin: 10px auto;
+        padding: 15px;
+        border: 2px solid #bfbfbf;
+        background-color: #e5e5e5;
+      }
+      #container {
+        padding: 15px;
+        border: 2px solid #bfbfbf;
+        background-color: #e5e5e5;
+      }
+      .inner {
+        display: flex;
+        flex-direction: row;
+      }
+      .snb {
+        margin: 10px 0;
+        padding: 10px 0;
+        width: 180px;
+        border: 1px solid #bdbdbd;
+        background-color: #f7f7f7;
+        text-align: center;
+      }
+      #content {
+        flex: 1;
+        height: 200px;
+        margin: 10px 0;
+        padding: 10px 0;
+        border: 1px solid #bdbdbd;
+        background-color: #f7f7f7;
+        text-align: center;
+      }
+      .aside {
+        width: 180px;
+        margin: 10px 0;
+        padding: 10px 0;
+        border: 1px solid #bdbdbd;
+        background-color: #f7f7f7;
+        text-align: center;
+      }
+      #footer {
+        margin: 10px 0;
+        padding: 10px;
+        border: 2px solid #bfbfbf;
+        background-color: #e5e5e5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- wrap -->
+    <div id="wrap">
+      <p>#wrap</p>
+      <!-- header -->
+      <header id="header">
+        <p>#header</p>
+      </header>
+      <!-- //header -->
+      <!-- container -->
+      <div id="container">
+        <p>#container</p>
+        <div class="inner">
+          <!-- snb -->
+          <div class="snb">
+            <p>.snb</p>
+          </div>
+          <!-- //snb -->
+          <!-- content -->
+          <div id="content">
+            <p>#content</p>
+          </div>
+          <!-- //content -->
+          <!-- aside -->
+          <div class="aside">
+            <p>.aside</p>
+          </div>
+          <!-- //aside -->
+        </div>
+      </div>
+      <!-- //container -->
+      <!-- footer -->
+      <footer id="footer">
+        <p>#footer</p>
+      </footer>
+      <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+  </body>
+</html>
