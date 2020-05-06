@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>fixed_layout1</title>
-  <link rel="stylesheet" href="../@common/reset.css">
-  <style>
-    html,body{width:100%;margin:0;padding:0}
-    #wrap{width:600px;margin:0 auto;padding:10px;border:1px solid #bfbfbf;background-color:#f7f7f7}
-    #header{margin:10px 0;padding:15px}
-    .grey{border:2px solid #bfbfbf;background-color:#e5e5e5}
-    #container{overflow:hidden;margin-bottom:10px;padding:15px}
-    .snb{float:left;width:180px;padding:10px 0}
-    #content{float:right;width:380px;height:200px;padding:10px 0}
-    .white{margin:10px 0;border:1px solid #bdbdbd;background-color:#fff;text-align:center}
-    #footer{margin-bottom:10px;padding:10px}
-    p{font-weight:bold}
-  </style>
-</head>
-<body>
-  <div id="wrap"><p>#wrap</p>
-    <!-- //#wrap -->
-    <header id="header" class="grey"><p>#header</p></header>
-    <!-- //#header -->
-    <div id="container" class="grey">
-      <p>#container</p>
-      <div class="snb white">
-        <p>.snb</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed_layout1</title>
+    <link rel="stylesheet" href="../@common/reset.css">
+    <style>
+      #wrap {
+        width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid #bfbfbf;
+        background-color: #f7f7f7;
+      }
+      #header {
+        margin: 10px 0;
+        padding: 15px;
+      }
+      .grey {
+        border: 2px solid #bfbfbf;
+        background-color: #e5e5e5;
+      }
+      #container {
+        overflow: hidden;
+        margin-bottom: 10px;
+        padding: 15px;
+      }
+      .snb {
+        float: left;
+        width: 180px;
+        padding: 10px 0;
+      }
+      #content {
+        float: right;
+        width: 380px;
+        height: 200px;
+        padding: 10px 0;
+      }
+      #footer {
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <p>#wrap</p>
+      <!-- //#wrap -->
+      <header id="header">
+        <p>#header</p>
+      </header>
+      <!-- //#header -->
+      <div id="container">
+        <p>#container</p>
+        <div class="snb white">
+          <p>.snb</p>
+        </div>
+        <!-- //#snb -->
+        <div id="content">
+          <p>#content</p>
+        </div>
+        <!-- //#content -->
       </div>
-      <!-- //#snb -->
-      <div id="content" class="white">
-        <p>#content</p>
-      </div>
-      <!-- //#content -->
+      <!-- //#container -->
+      <footer id="footer">
+        <p>#footer</p>
+      </footer>
+      <!-- //#footer -->
     </div>
-    <!-- //#container -->
-    <footer id="footer" class="grey">
-      <p>#footer</p>
-    </footer>
-    <!-- //#footer -->
-  </div>
-</body>
+  </body>
 </html>
