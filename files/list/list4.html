@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>number list</title>
+  <link rel="stylesheet" href="../@common/reset.css">
+  <style>
+    .list_type{
+      width: 525px;
+      padding: 20px;
+      border: 1px solid #c2c2c2;
+      list-style:none
+    }
+    .list_type li{
+      overflow: hidden;
+      margin-top: 5px;
+      padding-left: 30px;
+      font-size:12px;
+    }
+    .list_type li:first-child{
+      margin-top: 0;
+      font-weight: bold;
+    }
+    .list_type li .title{
+      display: block;
+      float: left;
+      width:30px;
+      margin:0 0 0 -30px;
+      color:green;font-weight:bold
+    }
+    .list_type li .desc {
+      line-height: 16px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="list_type">
+    <li><em class="title">1.</em><span class="desc"><strong>텍스트 숫자 리스트입니다. 텍스트 숫자 리스트입니다.</strong></span></li>
+    <li><em class="title">9.</em><span class="desc">숫자는 &lt;span&gt;을 사용하며 너비값을 가지고 있습니다.</span></li>
+    <li><em class="title">9.</em><span class="desc">텍스트의 시작위치는 텍스트 숫자영역의 너비값입니다.</span></li>
+    <li><em class="title">99.</em><span class="desc">리스트의 텍스트가 줄바뀜 될 경우를 고려해 행간 간격은em으로 줍니다. 리스트의 텍스트가 줄바뀜 될 경우를 고려해 행간 간격은em으로 줍니다. 리스트의 텍스트가 줄바뀜 될 경우를 고려해 행간 간격은em으로 줍니다.</span></li>
+    <li><em class="title">999.</em><span class="desc">줄바뀜시 두번째 행이 텍스트영역 밑에서 시작되는 것을 방지하기 위해 리스트에 좌측 padding값을 숫자영역의 너비만큼 줍니다.</span></li>
+    <li><em class="title">999.</em><span class="desc">숫자영역의 너비값 만큼 음수값 여백마진을 좌측에 줍니다.</span></li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>number list</title>
+  <link rel="stylesheet" href="../@common/reset.css">
+  <style>
+    .list_type{
+      width: 520px;
+      margin: 10px auto;
+      padding: 20px;
+      border: 1px solid #c2c2c2;
+      list-style: none
+    }
+    .list_type li{
+      margin-top: 5px;
+      background-image: url(img/);
+    }
+    .list_type li:first-child{
+      margin-top: 0;
+    }
+    .list_type li .numb{
+      float: left;
+      width: 13px;
+      height: 13px;
+      margin-right: 3px ;
+      background: url('./img/sprite.png') no-repeat -52px -32px;
+    }
+    li:nth-child(2) .numb{
+      background: url('./img/sprite.png') no-repeat -52px -51px
+    }
+    li:nth-child(3) .numb{
+      background: url('./img/sprite.png') no-repeat -52px -70px
+    }
+    li:nth-child(4) .numb{
+      background: url('./img/sprite.png') no-repeat -52px -89px
+    }
+    li:nth-child(5) .numb{
+      background: url('./img/sprite.png') no-repeat -52px -108px
+    }
+    .list_type li .desc{
+      display: block;
+      overflow: hidden
+    }
+    strong {
+      font-weight: bold
+    }
+  </style>
+</head>
+<body>
+  <ol class="list_type">
+    <li><sapn class="numb"></sapn> <span class="desc"><strong>숫자아이콘+텍스트 리스트입니다. 숫자아이콘+텍스트 리스트입니다.</strong></span></li>
+    <li><sapn class="numb"></sapn> <span class="desc">숫자아이콘+텍스트 리스트입니다. 숫자아이콘+텍스트 리스트입니다.</span></li>
+    <li><sapn class="numb"></sapn> <span class="desc">숫자리스트는 &lt;ol&gt;을 사용합니다.</span></li>
+    <li><sapn class="numb"></sapn> <span class="desc">숫자아이콘은 이미지로 넣어줍니다.</span></li>
+    <li><sapn class="numb"></sapn> <span class="desc">숫자아이콘+텍스트 리스트입니다. 숫자아이콘+텍스트 리스트입니다.</span></li>
+  </ol>
+</body>
+</html>
