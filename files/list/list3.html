@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>number list</title>
+  <title>numer list</title>
   <link rel="stylesheet" href="../@common/reset.css">
   <style>
     .list_type{
@@ -11,39 +11,37 @@
       margin: 10px auto;
       padding: 20px;
       border: 1px solid #c2c2c2;
-      list-style: none;
     }
     .list_type li{
       margin-top: 5px;
-      background-image: url(img/);
     }
     .list_type li:first-child{
       margin-top: 0;
     }
-    .list_type li .numb{
+    .list_type li .num{
       float: left;
       width: 13px;
       height: 13px;
-      margin-right: 3px ;
+      margin-right: 3px;
       background: url('./example/list3.png') no-repeat -52px -32px;
     }
-    li:nth-child(2) .numb{
+    li:nth-child(2) .num{
       background: url('./example/list3.png') no-repeat -52px -51px;
     }
-    li:nth-child(3) .numb{
+    li:nth-child(3) .num{
       background: url('./example/list3.png') no-repeat -52px -70px;
     }
-    li:nth-child(4) .numb{
+    li:nth-child(4) .num{
       background: url('./example/list3.png') no-repeat -52px -89px;
     }
-    li:nth-child(5) .numb{
+    li:nth-child(5) .num{
       background: url('./example/list3.png') no-repeat -52px -108px;
     }
     .list_type li .desc{
       display: block;
       overflow: hidden;
     }
-    strong {
+    .list_type li strong {
       font-weight: bold;
     }
   </style>
@@ -51,23 +49,23 @@
 <body>
   <ol class="list_type">
     <li>
-      <sapn class="numb"></sapn>
+      <sapn class="num" aria-lable="1"></sapn>
       <span class="desc"><strong>숫자아이콘+텍스트 리스트입니다. 숫자아이콘+텍스트 리스트입니다.</strong></span>
     </li>
     <li>
-      <sapn class="numb"></sapn>
+      <sapn class="num" aria-lable="2"></sapn>
       <span class="desc">숫자아이콘+텍스트 리스트입니다. 숫자아이콘+텍스트 리스트입니다.</span>
     </li>
     <li>
-      <sapn class="numb"></sapn>
+      <sapn class="num" aria-lable="3"></sapn>
       <span class="desc">숫자리스트는 &lt;ol&gt;을 사용합니다.</span>
     </li>
     <li>
-      <sapn class="numb"></sapn>
+      <sapn class="num" aria-lable="4"></sapn>
       <span class="desc">숫자아이콘은 이미지로 넣어줍니다.</span>
     </li>
     <li>
-      <sapn class="numb"></sapn>
+      <sapn class="num" aria-lable="5"></sapn>
       <span class="desc">숫자아이콘+텍스트 리스트입니다. 숫자아이콘+텍스트 리스트입니다.</span>
     </li>
   </ol>
