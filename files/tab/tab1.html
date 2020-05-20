@@ -11,13 +11,14 @@
         font-weight: 600;
       }
       .tab_list {
+        position: relative;
         width: 375px;
       }
       .tab_list ul {
-        display: flex;
+        overflow: hidden;
       }
       .tab_list .tab_item {
-        flex: 1;
+        float: left;
         text-align: center;
       }
       .tab_list .tab_item a {
@@ -32,17 +33,19 @@
         background-color: #269ac9;
       }
       .desc_wrap {
+        overflow-y: scroll;
         position: absolute;
         top: 77px;
         left: 30px;
         width: 930px;
+        height: 300px;
         padding: 25px 15px;
+        border: 10px;
         background-color: #269ac9;
         color: white;
       }
       .title {
         display: block;
-        font-weight: bold;
         line-height: 20px;
         text-align: center;
       }
@@ -52,12 +55,14 @@
         margin-top: 19px;
         text-align: center;
       }
+      strong{}
     </style>
   </head>
   <body>
-    <nav class="tab_list">
+    <div class="tab_list">
       <ul>
-        <li class="tab_item on"><a href="#">About</a>
+        <li class="tab_item on">
+          <a href="#">About</a>
           <span class="desc_wrap">
             <strong class="title">Portfolio</strong>
             <span class="desc">
@@ -72,11 +77,71 @@
             </span>
           </span>
         </li>
-        <li class="tab_item"><a href="#">Portfolio</a></li>
-        <li class="tab_item"><a href="#">Contact</a></li>
-        <li class="tab_item"><a href="#">Travel</a></li>
-        <li class="tab_item"><a href="#">etc</a></li>
+        <li class="tab_item">
+          <a href="#">Portfolio</a><span class="desc_wrap">
+            <strong class="title">Portfolio</strong>
+            <span class="desc">
+            quae nisi! Dolorum impedit nam reprehenderit culpa, eaque id, nobis aliquam voluptatum
+            ipsa deserunt reiciendis officia nemo velit numquam accusantium rerum sequi corporis natus
+            facere odit et a eos temporibus voluptatibus. Tenetur accusamus, odio ullam perspiciatis
+            animi earum ea, dicta veritatis sed neque fugit accusantium quia quidem! Commodi nihil
+            inventore similique, facilis cupiditate veritatis officiis nemo error sequi praesentium
+            quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, laborum. Sed
+            possimus doloribus deserunt odio nostrum animi cumque facere ex tempora provident, natus
+            saepe tenetur omnis ratione vero alias similique?
+            </span>
+          </span>
+        </li>
+        <li class="tab_item">
+          <a href="#">Contact</a>
+          <span class="desc_wrap">
+            <strong class="title">Portfolio</strong>
+            <span class="desc">
+            quae nisi! Dolorum impedit nam reprehenderit culpa, eaque id, nobis aliquam voluptatum
+            ipsa deserunt reiciendis officia nemo velit numquam accusantium rerum sequi corporis natus
+            facere odit et a eos temporibus voluptatibus. Tenetur accusamus, odio ullam perspiciatis
+            animi earum ea, dicta veritatis sed neque fugit accusantium quia quidem! Commodi nihil
+            inventore similique, facilis cupiditate veritatis officiis nemo error sequi praesentium
+            quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, laborum. Sed
+            possimus doloribus deserunt odio nostrum animi cumque facere ex tempora provident, natus
+            saepe tenetur omnis ratione vero alias similique?
+            </span>
+          </span>
+        </li>
+        <li class="tab_item">
+          <a href="#">Travel</a>
+          <span class="desc_wrap">
+            <strong class="title">Portfolio</strong>
+            <span class="desc">
+            quae nisi! Dolorum impedit nam reprehenderit culpa, eaque id, nobis aliquam voluptatum
+            ipsa deserunt reiciendis officia nemo velit numquam accusantium rerum sequi corporis natus
+            facere odit et a eos temporibus voluptatibus. Tenetur accusamus, odio ullam perspiciatis
+            animi earum ea, dicta veritatis sed neque fugit accusantium quia quidem! Commodi nihil
+            inventore similique, facilis cupiditate veritatis officiis nemo error sequi praesentium
+            quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, laborum. Sed
+            possimus doloribus deserunt odio nostrum animi cumque facere ex tempora provident, natus
+            saepe tenetur omnis ratione vero alias similique?
+            </span>
+          </span>
+        </li>
+        <li class="tab_item">
+          <a href="#">etc</a>
+          <span class="desc_wrap">
+            <strong class="title">Portfolio</strong>
+            <span class="desc">
+            quae nisi! Dolorum impedit nam reprehenderit culpa, eaque id, nobis aliquam voluptatum
+            ipsa deserunt reiciendis officia nemo velit numquam accusantium rerum sequi corporis natus
+            facere odit et a eos temporibus voluptatibus. Tenetur accusamus, odio ullam perspiciatis
+            animi earum ea, dicta veritatis sed neque fugit accusantium quia quidem! Commodi nihil
+            inventore similique, facilis cupiditate veritatis officiis nemo error sequi praesentium
+            quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, laborum. Sed
+            possimus doloribus deserunt odio nostrum animi cumque facere ex tempora provident, natus
+            saepe tenetur omnis ratione vero alias similique?
+            </span>
+          </span>
+        </li>
       </ul>
-    </nav>
+    <div>asdlkjfasdlkfjla;ksdjflkadsfj</div>
+    </div>
   </body>
 </html>
